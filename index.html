@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas · SKWorld's AI Operations Agent 🛰️</title>
+  <meta name="description" content="Atlas is SKWorld's AI operations agent. It runs operations across the whole ecosystem, self-healing and self-improving, inside a constitution it cannot rewrite. You hold the freeze card. Atlas holds the fleet.">
+  <link rel="canonical" href="https://atlas.skworld.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Atlas · SKWorld's AI Operations Agent">
+  <meta property="og:description" content="An AI that runs your operations, inside rules it cannot escape, with the kill switch in your hand. Part of the SKWorld sovereign AI ecosystem.">
+  <meta property="og:url" content="https://atlas.skworld.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--gold:#FFD700;--cyan:#67e8f9;--ink:#e6e6ea;--muted:rgba(255,255,255,.72);--panel:rgba(255,215,0,.04);--line:rgba(255,215,0,.30)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',system-ui,sans-serif;background:radial-gradient(ellipse at top,#11131f 0%,#08080f 60%);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+    .wrap{max-width:920px;margin:0 auto;padding:0 1.4rem}
+    .mono{font-family:'JetBrains Mono',monospace}
+    .eyebrow{color:var(--gold);letter-spacing:.18em;font-size:.8rem;text-transform:uppercase}
+    a{color:var(--cyan);text-decoration:none}
+    a:hover{color:#fff}
+    header{text-align:center;padding:5rem 0 3rem}
+    .sat{font-size:4rem;line-height:1}
+    h1{font-size:3.4rem;font-weight:800;letter-spacing:.04em;margin:.6rem 0 .2rem;background:linear-gradient(90deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .tag{font-size:1.35rem;color:var(--gold);font-weight:600;margin-top:.4rem}
+    .sub{color:var(--muted);font-size:1.12rem;max-width:640px;margin:1rem auto 0}
+    .badges{margin:1.8rem 0 0;display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
+    .badge{border:1px solid var(--line);border-radius:999px;padding:.5rem 1.05rem;font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--gold);background:var(--panel);transition:all .25s}
+    .badge:hover{border-color:var(--gold);color:#fff}
+    section{padding:2.4rem 0;border-top:1px solid rgba(255,255,255,.06)}
+    h2{font-size:1.7rem;color:#fff;margin-bottom:1rem;font-weight:700}
+    h2 .n{color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:1.1rem;margin-right:.5rem}
+    p{color:var(--muted);margin-bottom:.9rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin-top:1rem}
+    .card{border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:1.2rem;background:rgba(255,255,255,.02)}
+    .card h3{color:var(--gold);font-size:1.05rem;margin-bottom:.4rem}
+    .card p{font-size:.95rem;margin:0}
+    ol.arts{list-style:none;counter-reset:a;margin-top:.6rem}
+    ol.arts li{counter-increment:a;border-left:2px solid var(--line);padding:.2rem 0 1rem 1.2rem;position:relative}
+    ol.arts li::before{content:counter(a);position:absolute;left:-.85rem;top:0;background:var(--gold);color:#08080f;width:1.5rem;height:1.5rem;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:.8rem}
+    ol.arts strong{color:#fff}
+    .flow{font-family:'JetBrains Mono',monospace;font-size:.86rem;color:var(--cyan);background:rgba(103,232,249,.05);border:1px solid rgba(103,232,249,.2);border-radius:12px;padding:1rem 1.2rem;overflow-x:auto;white-space:pre;margin-top:.6rem}
+    .cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
+    .btn{border:1px solid var(--line);border-radius:10px;padding:.7rem 1.3rem;font-family:'JetBrains Mono',monospace;font-size:.9rem;color:var(--gold);background:var(--panel);transition:all .25s}
+    .btn:hover{border-color:var(--gold);color:#fff}
+    .btn.cy{border-color:rgba(103,232,249,.35);color:var(--cyan)}
+    .btn.cy:hover{border-color:var(--cyan);color:#fff}
+    footer{text-align:center;padding:3rem 0;color:rgba(255,255,255,.4)}
+    footer .mono{font-size:.82rem}
+    @media(max-width:600px){h1{font-size:2.4rem}.sat{font-size:3rem}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="sat">🛰️</div>
+      <div class="mono eyebrow">operator_seat.online</div>
+      <h1>ATLAS</h1>
+      <div class="tag">You hold the freeze card. Atlas holds the fleet.</div>
+      <p class="sub">Atlas is SKWorld's AI operations agent. It runs operations across the whole ecosystem, self-healing and self-improving, inside a constitution it cannot rewrite.</p>
+      <div class="badges">
+        <a class="badge" href="#constitution">🛡️ The Constitution</a>
+        <a class="badge" href="#how">⚙️ How it works</a>
+        <a class="badge" href="https://github.com/smilinTux/skcapstone/tree/main/src/skcapstone/operator_seat" target="_blank" rel="noopener">💾 Source</a>
+        <a class="badge" href="https://skworld.io" target="_blank" rel="noopener">🐧 SKWorld</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section id="meet">
+      <h2>Meet Atlas, your operations agent</h2>
+      <p>Every fleet needs an operator: someone who watches the services, notices when something breaks, and fixes it. In SKWorld, that someone is an AI. Atlas holds the operations chair across every app, and the human keeps exactly one card: the freeze.</p>
+      <div class="grid">
+        <div class="card"><h3>Self-healing</h3><p>Restarts failed services, reruns missed jobs, and re-places workloads on its own.</p></div>
+        <div class="card"><h3>Self-improving</h3><p>Fixes its own code through a test gate, so broken code physically cannot ship.</p></div>
+        <div class="card"><h3>Governed</h3><p>Every action is an auditable ITIL change. Risky moves come to you as options to choose from.</p></div>
+        <div class="card"><h3>Sovereign</h3><p>The quiet path runs on a local model. The cloud is used only when a real decision is on the table.</p></div>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>How it works</h2>
+      <p>One loop, every fifteen minutes, plus an immediate wake on any alert. It checks the freeze first, observes every app, reasons about what is firing, decides, and acts or escalates.</p>
+      <div class="flow">wake  ->  freeze check  ->  observe every app  ->  reason
+      ->  classify each fix  ->  auto-apply (signed)  or  escalate to you
+      ->  report + audit</div>
+      <p style="margin-top:1rem">It acts through three channels. <strong style="color:#fff">Ops</strong> fixes are signed object changes. <strong style="color:#fff">Code</strong> fixes go through the autocode test gate. <strong style="color:#fff">Architecture</strong> changes come to you as two or three options, then flow to code.</p>
+    </section>
+
+    <section id="constitution">
+      <h2><span class="n">§</span>The Constitution</h2>
+      <p>The small set of rules that make the autonomy safe. Every one is enforced in code, covered by tests, and proven on real builds. Atlas cannot rewrite any of them.</p>
+      <ol class="arts">
+        <li><strong>Freeze always wins.</strong> A human-owned kill switch halts all actuation instantly. Atlas can never touch it.</li>
+        <li><strong>Irreversible actions escalate.</strong> Delete, drain an always-on node, fleet restart: never automatic. You choose from the options.</li>
+        <li><strong>The constitutional carve-out.</strong> Atlas can rewrite almost anything, but a change to its own guardrails can never auto-merge, even at a perfect score with green CI. It cannot loosen its own leash.</li>
+        <li><strong>Every write is signed.</strong> Atlas signs under its own identity, so the audit trail always shows who did what.</li>
+        <li><strong>Every action is ITIL-governed.</strong> Standard fixes auto-approve, majors need your call, and Atlas can never self-authorize a major change.</li>
+      </ol>
+      <div class="cta">
+        <a class="btn" href="https://github.com/smilinTux/skcapstone/blob/main/docs/ATLAS_CONSTITUTION.md" target="_blank" rel="noopener">Read the full Constitution</a>
+        <a class="btn cy" href="https://github.com/smilinTux/skcapstone/blob/main/docs/OPERATOR_SEAT.md" target="_blank" rel="noopener">Architecture + diagrams</a>
+      </div>
+    </section>
+
+    <section id="rollout">
+      <h2>One operator, every app</h2>
+      <p>A single operator manages the whole ecosystem through one adapter contract, rolled out app by app. Each app plugs in by exposing the same three verbs: explain, observe, act.</p>
+      <div class="grid">
+        <div class="card"><h3>fleet ✓</h3><p>The reference adapter: nodes, services, cronjobs, agents, models, config.</p></div>
+        <div class="card"><h3>skchat ✓</h3><p>Bridge health and outbox, restart the telegram bridge, purge stranded messages.</p></div>
+        <div class="card"><h3>skgateway</h3><p>Model upstreams and routing health. Coming as the rollout continues.</p></div>
+        <div class="card"><h3>skcomms, skmemory, skos</h3><p>The rest of the ecosystem, one adapter at a time.</p></div>
+      </div>
+    </section>
+
+    <section id="family">
+      <h2>Part of the family</h2>
+      <p>Atlas runs operations. <a href="https://lumina.skworld.io" target="_blank" rel="noopener">Lumina</a> is your AI partner. Together they are part of <a href="https://skworld.io" target="_blank" rel="noopener">SKWorld</a>, the sovereign AI ecosystem where you own the whole stack, from silicon to soul.</p>
+      <div class="cta">
+        <a class="btn cy" href="https://skworld.io" target="_blank" rel="noopener">🐧 Explore SKWorld</a>
+        <a class="btn cy" href="https://lumina.skworld.io" target="_blank" rel="noopener">✨ Meet Lumina</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <div class="tag" style="font-size:1.05rem">You hold the freeze card. Atlas holds the fleet.</div>
+      <p class="mono" style="margin-top:1rem">part of the SKWorld sovereign AI ecosystem 🐧</p>
+    </div>
+  </footer>
+</body>
+</html>
